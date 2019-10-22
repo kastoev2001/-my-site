@@ -85,7 +85,7 @@ i {
 }
 
 .avatar {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .blog-navigation {
@@ -225,6 +225,7 @@ footer {
 
 /* скрываем чекбоксы и блоки с содержанием */
 .hide {
+
     display: none; 
 }
 .hide + label ~ div{
@@ -232,25 +233,27 @@ footer {
 }
 /* оформляем текст label */
 .hide + label {
-    border-bottom: 1px dotted green;
+    border-bottom: 1px dotted white;
     padding: 0;
-    color: green;
+    color: white;
     cursor: pointer;
     display: inline-block; 
 }
 /* вид текста label при активном переключателе */
 .hide:checked + label {
-    color: red;
+    color: black;
     border-bottom: 0;
 }
 /* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + div {
+  color: black;
     display: block; 
     background: #efefef;
     -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
     -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
     box-shadow: inset 3px 3px 10px #7d8e8f;
-    padding: 10px; 
+    padding: 10px;
+    background-color: rgba(68, 112, 196, 0.7); 
 }
 
 /* demo контейнер */
