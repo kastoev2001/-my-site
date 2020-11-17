@@ -1,60 +1,69 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Биография Кастоева Азамата</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-<script language="php">
-    echo 'qwerqwer';
-    </script>
-     <header>
-      <h1 class="page-title">Биография Кастоева Азамата</h1>
-    </header>
-    <main>
-      <div class="avatar-container">
-        <img class="avatar" src="img/Azamat_006.jpg" width="5%" height="5%" alt="фото">
-      </div>
-      <nav class="blog-navigation">
-        <h2>Записи в блоге</h2>
-        <ul>
-
-
-
-          <div class="demo">
-        <li><input type="checkbox" id="hd-1" class="hide"/>
-    <label for="hd-1">Глава 1 Как я стал МИЛИОРДЕРАМ.</label>
-    <div>
-       Биткоинашт г1ол хьал ваьлар со!!!
-    </div></li> 
-
-
-    <li><input type="checkbox" id="hd-2" class="hide"/>
-    <label for="hd-2">Глава 2 Как я шел к первому Миллиону.</label>
-    <div>
-        Как и в первом главе. По бедкоину хьал ваьлар со!!!
-    </div></li>
-
-
-
-    <li><input type="checkbox" id="hd-3" class="hide"/>
-    <label for="hd-3" >Глава 3 как я с Кастоевым Алиханам сделал много Катлетов.</label>
-    <div>
-       Мы с Алиханам блогерам создали контент в инстограме, и цет г1ол тоже хьал даьлар тхо!!!
-    </div></li>
-         
-       </div>   
-        </ul>
-      </nav>
-      <section>
-        <p>Всем привет! Добро пожаловать на мой первый сайт. Ещё не давноя я бал хьал ца воалач саг, но тахан, я хьал ваьн саг. </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qJJMUsFRJpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
-     <img href="img/Kastoev_Alihan_006.mp4>
-    </main>
-    <footer>
-      Подвал сайта
-    </footer>
-  </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content ="width-device-width, initial-scale-1.0">
+	<title>form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="form">
+			<form action="#" id="form" class="form__body">
+				<h1 class="form__title">Отправка формы на потчу</h1>
+				<div class="form__item">
+					<label for="formName" class="form__label">Имя*:</label>
+					<input id="formName" type="text" name="name" class="form__input _req">
+				</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail*:</label>
+						<input id="formEmail" type="text" name="Email" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<div class="form__label">Левша или правша?</div>
+						<div class="options">
+							<div class="options__item">
+								<input id="formRightHanded" type="radio" value="right" name="hand" class="option__input" checked>
+								<label for="formRightHanded" class="option__label"><span>Правша</span></label>
+							</div>
+							<div class="optios__item">
+								<input id="formLeftHanded" type="radio" value="left" name="hand" class="option__input">
+								<label for="formLeftHanded" class="option__label"><span>Левша</span></label>
+							</div>
+						</div>
+						</div>
+							<div class="form__item">
+								<label fom="formMessage" class="form__label"></label>
+								<textarea name="message" id="formMessage" class="form__input"></textarea>
+							</div>
+							<div class="form__item">
+								<div class="form__label">Возраст:</div>
+								<select name="age" class="select">
+									<option valut="от 18 до 25" selected>морики</option>
+									<option valut="от 25 до 45">гёлики</option>
+									<option valut="от 45">селики</option>
+								</select>
+							</div>
+							<div class="form__item">
+								<div class="file">
+									<div class="file__item">
+										<input id="formImage" accept=".jpg, .png, .gif" type="file" class="file__input">
+										<div class="file__button">Выбрать</div>
+									</div>
+									<div class="file__preview"></div>
+								</div>
+							</div>
+							<div class="form__item">
+								<div class="checkbox">
+									<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+									<label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="#">Условиями</a></span>*</label>
+								</div>
+							</div>
+							<button type="submit" class="form__bottom">Отправить</button>
+						</form>
+					</div>
+		</div>
+	</div>
+	<script src="javaScript.js"></script>
+</body>
 </html>
