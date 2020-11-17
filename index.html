@@ -71,7 +71,7 @@ var button = form.querySelector('button');
 
 button.addEventListener('click', function (e) {
     e.preventDefault();
-    var formData = new FormData(form).append(name, value);
+    var formData = new FormData(form);
     console.log(formData);
 })
 	</script>
