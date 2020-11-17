@@ -65,5 +65,15 @@
 		</div>
 	</div>
 	<script src="javaScript.js"></script>
-</body>
+	<script>
+	const form = document.querySelector('form');
+var button = form.querySelector('button');
+
+button.addEventListener('click', function (e) {
+    e.preventDefault();
+    var formData = new FormData(form).append(name, value);
+    console.log(formData);
+})
+	</script>
+	</body>
 </html>
